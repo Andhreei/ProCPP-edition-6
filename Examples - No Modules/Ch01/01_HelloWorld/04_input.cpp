@@ -1,11 +1,11 @@
 #include <iostream>
-#include <print>
+#include <format>
 
 int main()
 {
-	int value;
-	std::cin >> value;
-	std::println("You entered {}", value);
+    int value;
+    std::cin >> value;
+    std::cout << std::format("You entered {}", value);
 
-	return 0;
+    return 0;
 }
